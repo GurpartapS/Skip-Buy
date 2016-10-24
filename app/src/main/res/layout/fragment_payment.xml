@@ -1,0 +1,120 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gurpartap.skip_and_buy.Controller.PaymentFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="SUBTOTAL :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/subTotal"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="50sp"
+                android:layout_marginLeft="30sp"/>
+
+            <TextView
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="50sp"
+                android:layout_marginRight="30sp"
+                android:layout_marginEnd="30sp"
+                android:id="@+id/subTotalNumber" />
+
+            <TextView
+                android:text="TAXES :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taxesText"
+                android:layout_below="@+id/subTotal"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="30sp" />
+
+            <TextView
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subTotalNumber"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="30sp"
+                android:layout_marginRight="30sp"
+                android:layout_marginEnd="30sp"
+                android:id="@+id/taxes" />
+
+            <TextView
+                android:text="TOTAL:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/taxesText"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="30sp"
+                android:id="@+id/totalText" />
+
+            <TextView
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/taxes"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="30sp"
+                android:layout_marginRight="30sp"
+                android:layout_marginEnd="30sp"
+                android:id="@+id/total" />
+
+            <Button
+                android:text="CONFIRM"
+                android:id="@+id/payNowbtn"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="220dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_below="@+id/total"
+                android:background="@color/colorAccent"
+                android:textColor="#ffffff"
+                android:textStyle="normal|bold"
+                android:layout_height="40dp" />
+
+            <Button
+                android:text="CANCEL"
+                android:id="@+id/cancelbtn"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginRight="220dp"
+                android:layout_below="@+id/totalText"
+                android:background="@color/colorAccent"
+                android:textColor="#ffffff"
+                android:textStyle="normal|bold"
+                android:layout_height="40dp"
+                android:onClick="viewCartActivity"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
